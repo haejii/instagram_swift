@@ -40,7 +40,7 @@ class FeedCell: UICollectionViewCell {
     
     private lazy var likeButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(#imageLiteral(resourceName: "venom-7"), for: .normal)
+        button.setImage(#imageLiteral(resourceName: "like_unselected"), for: .normal)
         button.tintColor = .black
         return button
     }()
@@ -55,7 +55,7 @@ class FeedCell: UICollectionViewCell {
     
     private lazy var shareButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setImage(#imageLiteral(resourceName: "venom-7"), for: .normal)
+        button.setImage(#imageLiteral(resourceName: "like_unselected"), for: .normal)
         button.tintColor = .black
         return button
     }()
@@ -75,6 +75,7 @@ class FeedCell: UICollectionViewCell {
         return label
     }()
     
+    private var stackView = UIStackView()
     
     // MARK: - Lifecycle
     
@@ -95,6 +96,8 @@ class FeedCell: UICollectionViewCell {
         postImageView.anchor(top: profileImageView.bottomAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 8)
         postImageView.heightAnchor.constraint(equalTo: widthAnchor, multiplier: 1).isActive = true
         
+        configureActionButtons()
+        
     }
     
     required init?(coder: NSCoder){
@@ -107,4 +110,14 @@ class FeedCell: UICollectionViewCell {
         print("DEBUG: did tap username")
     }
     
+    // MARK: - Helpers
+    
+    func configureActionButtons(){
+        stackView = UIStackView(arrangedSubviews: [likeButton, commentButton, shareButton])
+        stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
+        
+        addSubview(stackView)
+        stackView.anchor(top: postImageView.bottomAnchor, width: 120, height: 50)
+    }
 }
