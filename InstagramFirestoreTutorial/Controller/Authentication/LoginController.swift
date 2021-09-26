@@ -17,11 +17,13 @@ class LoginController: UIViewController {
         configureUI()
     }
     
+
     // MARK: -Helpers
     
     func configureUI(){
         view.backgroundColor = .white
         navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.barStyle = .black
         
         let gradient = CAGradientLayer()
         gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemBlue.cgColor]
