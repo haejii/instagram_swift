@@ -15,7 +15,7 @@ class MainTabController: UITabBarController{
         configureViewControllers()
     }
     
-    // MARK: - Helpers
+    // MARK: - Helpersx
     
     func configureViewControllers() {
         view.backgroundColor = .white
