@@ -46,24 +46,25 @@ class LoginController: UIViewController {
         return button
     }()
     
+    
+    private let forgotPasswordButton: UIButton = {
+        let button = UIButton(type: .system)
+        
+        button.attributedTitle(firstPart: "Forgot you password?" , secondPart: "Get help signing in. ")
+        
+        return button
+    }()
+    
     private let doneHaveAccountButton: UIButton = {
         let button = UIButton(type: .system)
         
-        
-        button.attributedTitle(firstPart: "Don't have an account?   ", secondPart: "Sign up")
+        button.addTarget(self, action: #selector(handleShowSignUp), for: .touchUpInside)
+        button.attributedTitle(firstPart: "Don't have an account?", secondPart: "Sign up")
        
         
         return button
     }()
     
-    
-    private let forgotPasswordButton: UIButton = {
-        let button = UIButton(type: .system)
-        
-        button.attributedTitle(firstPart: "Forgot you password? " , secondPart: "Get help signing in. ")
-        
-        return button
-    }()
     
     //privat let iconImage = UIImageView(image:)
     // MARK: - Lifecycle
@@ -73,19 +74,21 @@ class LoginController: UIViewController {
         configureUI()
     }
     
+    // MARK: - Actions
+    
+    @objc func handleShowSignUp() {
+        let controller =  RegistrationController() 
+        navigationController?.pushViewController(controller, animated: true)
+    }
 
     // MARK: -Helpers
     
     func configureUI(){
+        configureGradientLayer()
         view.backgroundColor = .white
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
-        
-        let gradient = CAGradientLayer()
-        gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemBlue.cgColor] // 애니메이션 같은 것을 볼 땐, cgcolor 사용
-        gradient.locations = [0, 1]
-        view.layer.addSublayer(gradient)
-        gradient.frame = view.frame
+    
         
         view.addSubview(iconImge)
         iconImge.centerX(inView: view)
