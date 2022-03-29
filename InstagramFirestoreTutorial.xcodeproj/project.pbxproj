@@ -26,6 +26,7 @@
 		2EA485DB26F723AC00467589 /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA485DA26F723AC00467589 /* ImageSelectorController.swift */; };
 		2EA485DD26F723BB00467589 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA485DC26F723BB00467589 /* NotificationController.swift */; };
 		2EA485DF26F723D400467589 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA485DE26F723D400467589 /* ProfileController.swift */; };
+		2EF6719427F346C20026C024 /* AuthenicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF6719327F346C20026C024 /* AuthenicationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		2EA485DA26F723AC00467589 /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
 		2EA485DC26F723BB00467589 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		2EA485DE26F723D400467589 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		2EF6719327F346C20026C024 /* AuthenicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenicationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		2E31522526F32E7000214B46 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2EF6719327F346C20026C024 /* AuthenicationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 				2E99E84F26F32CAA005FC971 /* ViewController.swift in Sources */,
 				2E4076042700B58E008F1AC8 /* LoginController.swift in Sources */,
 				2E3A245526FF7EE700B89CB0 /* FeedCell.swift in Sources */,
+				2EF6719427F346C20026C024 /* AuthenicationViewModel.swift in Sources */,
 				2EA485DB26F723AC00467589 /* ImageSelectorController.swift in Sources */,
 				2EA485DD26F723BB00467589 /* NotificationController.swift in Sources */,
 				2EA485D926F7239E00467589 /* SearchController.swift in Sources */,
