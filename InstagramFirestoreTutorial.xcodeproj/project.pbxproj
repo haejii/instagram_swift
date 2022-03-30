@@ -26,6 +26,7 @@
 		2EA485DB26F723AC00467589 /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA485DA26F723AC00467589 /* ImageSelectorController.swift */; };
 		2EA485DD26F723BB00467589 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA485DC26F723BB00467589 /* NotificationController.swift */; };
 		2EA485DF26F723D400467589 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA485DE26F723D400467589 /* ProfileController.swift */; };
+		2EAE870927F405D100B07E03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EAE870827F405D100B07E03 /* GoogleService-Info.plist */; };
 		2EF6719427F346C20026C024 /* AuthenicationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF6719327F346C20026C024 /* AuthenicationViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		2EA485DA26F723AC00467589 /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
 		2EA485DC26F723BB00467589 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		2EA485DE26F723D400467589 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		2EAE870827F405D100B07E03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2EF6719327F346C20026C024 /* AuthenicationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenicationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +191,7 @@
 				2E99E85326F32CAB005FC971 /* Assets.xcassets */,
 				2E99E85526F32CAB005FC971 /* LaunchScreen.storyboard */,
 				2E99E85826F32CAB005FC971 /* Info.plist */,
+				2EAE870827F405D100B07E03 /* GoogleService-Info.plist */,
 			);
 			path = InstagramFirestoreTutorial;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E99E85726F32CAB005FC971 /* LaunchScreen.storyboard in Resources */,
+				2EAE870927F405D100B07E03 /* GoogleService-Info.plist in Resources */,
 				2E99E85426F32CAB005FC971 /* Assets.xcassets in Resources */,
 				2E99E85226F32CAA005FC971 /* Main.storyboard in Resources */,
 			);
@@ -471,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -526,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
